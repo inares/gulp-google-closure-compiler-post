@@ -1,6 +1,6 @@
-![build status](https://secure.travis-ci.org/inares/gulp-google-closure-compiler-post.svg?branch=master)(http://travis-ci.org/inares/gulp-google-closure-compiler-post)
-[![devDependency Status](https://david-dm.org/inares/gulp-google-closure-compiler-post.svg)](https://david-dm.org/inares/gulp-google-closure-compiler-post#info=devDependencies)
-
+[![build status](https://secure.travis-ci.org/inares/gulp-google-closure-compiler-post.svg?branch=master)](http://travis-ci.org/inares/gulp-google-closure-compiler-post)
+[![dependencies Status](https://david-dm.org/inares/gulp-google-closure-compiler-post/status.svg)](https://david-dm.org/inares/gulp-google-closure-compiler-post)
+[![devDependencies Status](https://david-dm.org/inares/gulp-google-closure-compiler-post/dev-status.svg)](https://david-dm.org/inares/gulp-google-closure-compiler-post?type=dev)
 
 ## Introduction
 gulp-google-closure-compiler-post is a plugin for [gulp](https://github.com/wearefractal/gulp).
