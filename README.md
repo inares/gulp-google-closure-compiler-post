@@ -1,3 +1,7 @@
+![build status](https://secure.travis-ci.org/inares/gulp-google-closure-compiler-post.svg?branch=master)(http://travis-ci.org/inares/gulp-google-closure-compiler-post)
+[![devDependency Status](https://david-dm.org/inares/gulp-google-closure-compiler-post.svg)](https://david-dm.org/inares/gulp-google-closure-compiler-post#info=devDependencies)
+
+
 ## Introduction
 gulp-google-closure-compiler-post is a plugin for [gulp](https://github.com/wearefractal/gulp).
 It is designed to use the Google Closure Compiler without installing it.
