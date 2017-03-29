@@ -5,7 +5,6 @@
 const PluginError = require('gulp-util').PluginError;
 const Transform   = require('readable-stream/transform');
 const request     = require('request');
-const path        = require('path');
 
 const PLUGIN_NAME = 'gulp-google-closure-compiler-post';
 
