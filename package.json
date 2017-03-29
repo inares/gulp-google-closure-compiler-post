@@ -1,0 +1,49 @@
+{
+  "name": "gulp-google-closure-compiler-post",
+  "version": "0.1.0",
+  "description": "Gulp pluging - Use the online compiler of Google closure, so you don't need to install it.",
+  "license": "MIT",
+  "keywords": [
+    "gulpplugin",
+    "Google closure compiler",
+    "Javascript",
+    "compiler",
+    "optimizer",
+    "minifier",
+    "compress",
+    "google",
+    "closure",
+    "minify"
+  ],
+  "homepage": "https://github.com/inares/gulp-google-closure-compiler-post",
+  "bugs": "https://github.com/inares/gulp-google-closure-compiler-post/issues",
+  "author": {
+    "name": "Aurélien DEVAUX",
+    "email": "aurelien.devaux@inares.org",
+    "url": "https://github.com/inares/"
+  },
+  "main": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/inares/gulp-google-closure-compiler-post.git"
+  },
+  "scripts": {
+    "pretest": "jscs index.js test/ && jshint index.js test/",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "gulp": ">=3.0.0",
+    "gulp-util": "^3.0.4",
+    "jscs": "^1.12.0",
+    "jshint": "^2.9.4",
+    "mocha": ">=1.15.0",
+    "should": ">=2.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  }
+}
