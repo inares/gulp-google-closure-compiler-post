@@ -7,6 +7,5 @@
   "requireSemicolons": true,
   "requireLineFeedAtFileEnd": true,
   "disallowQuotedKeysInObjects": true,
-  "disallowMultipleLineStrings": true,
-  "disallowMultipleSpaces": false
+  "disallowMultipleLineStrings": true
 }
