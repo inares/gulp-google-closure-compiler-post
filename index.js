@@ -5,6 +5,7 @@
 const PluginError = require('gulp-util').PluginError;
 const Transform   = require('readable-stream/transform');
 const request     = require('request');
+const path        = require('path');
 
 const PLUGIN_NAME = 'gulp-google-closure-compiler-post';
 
@@ -30,18 +31,18 @@ module.exports = function( opt ) {
       return callback( new PluginError(PLUGIN_NAME, 'Streaming not supported') );
     }
 
-    var optType     = typeof opt;
+    var optType    = typeof opt;
     var jsExterns  = '';
     // New file path if needed
-    var newFilePath = null;
+    var newFileName = null;
 
     // Handle options
     if( opt !== undefined && opt !== null ) {
       if( optType === 'string' && opt !== '' ) {
-        newFilePath = opt;
+        newFileName = opt;
       } else if (optType === 'object') {
         if( opt.path !== undefined && opt.path !== null && typeof opt.path === 'string' && opt.path !== '' ) {
-          newFilePath = opt;
+          newFileName = opt.path;
         }
         if( opt.jsExterns !== undefined && opt.jsExterns !== null && typeof opt.jsExterns === 'string' && opt.jsExterns !== '' ) {
           jsExterns = opt.jsExterns;
@@ -83,8 +84,8 @@ module.exports = function( opt ) {
             console.log( myJSON.statistics );
             var newFile = file.clone( {contents: false} );
             newFile.contents = new Buffer( myJSON.compiledCode );
-            if( newFilePath !== null ) {
-              newFile.path = opt;
+            if( newFileName !== null ) {
+              newFile.path = newFileName;
             }
             return callback( null, newFile );
           }

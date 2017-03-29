@@ -1,16 +1,16 @@
 {
   "name": "gulp-google-closure-compiler-post",
   "version": "0.1.0",
-  "description": "Gulp pluging - Use the online compiler of Google closure, so you don't need to install it.",
+  "description": "Gulp pluging - Use the online compiler of Google Closure, so you don't need to install it.",
   "license": "MIT",
   "keywords": [
     "gulpplugin",
-    "Google closure compiler",
+    "Google Closure Compiler",
     "Javascript",
     "compiler",
     "optimizer",
     "minifier",
-    "compress",
+    "compression",
     "google",
     "closure",
     "minify"
